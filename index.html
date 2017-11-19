@@ -1,43 +1,54 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <meta charset="utf-8">
     <meta name="author" content="Hector Raimundo">
     <meta name="description" content="Hoja de Vida Digital">
     <title>Hoja de Vida Digital</title>
   </head>
+
   <body>
-    <header>
-      <svg>
+<!--Inicia el encabezado -->
+    <header id="informacion_basica">
+      <svg id="logo">
         <image xlink:href="images/LOGO.svg" width="200" height="200"></image>
       </svg>
         <h1>Hoja de Vida</h1>
           <h2>Hector Raimundo</h2>
     </header>
-    <nav>
+
+  <!--Seccion con enlaces para navegar en las diferentes paginas -->
+    <nav id="enlaces">
       <ul>
         <li><a href="index.html">Inicio</a></li>
         <li><a href="educacion.html">Educacion</a></li>
         <li><a href="experiencia.html">Experiencia</a></li>
       </ul>
     </nav>
-    <section>
 
-      <h2>Informacion Personal</h2>
-      <img src="images/perfil.jpg" alt="Foto de Perfil" title="Foto de Perfil">
-      <ul>
+<!--Inicia la seccion de la pagina -->
+    <section>
+      <h2 id="informacion_personal">Informacion Personal</h2>
+      <img id="imagen_perfil" src="images/perfil.jpg" alt="Foto de Perfil" title="Foto de Perfil">
+      <ul id="datos_personales">
         <li><strong>Nombres:</strong> Hector Alejandro</li>
         <li><strong>Apellidos:</strong> Raimundo Cabrejo</li>
         <li><strong>Lugar y fecha de nacimiento:</strong> 14/11/86, El Salvador</li>
       </ul>
 
-      <h2>Informacion de Perfil</h2>
-      <ul>
-        <li><strong>Perfil: </strong>Innovador, Visionario</li>
-        <li><strong>Idiomas: </strong>Español e Ingles</li>
-      </ul>
+<!--Se declaran algunos datos importantes para la hoja de vida -->
+      <article class="informacion_detallada">
+        <h2 id="habilidades_idiomas">Informacion de Perfil</h2>
+        <ul id="lista_habilidades">
+          <li><strong>Perfil: </strong>Innovador, Visionario</li>
+          <li><strong>Idiomas: </strong>Español e Ingles</li>
+        </ul>
+      </article>
     </section>
-    <footer>
+
+<!--Inicia el pie de pagina con la informacion para contactar -->
+    <footer id="datos_contacto">
       <p>&copy; Derechos reservados</p>
       <ul>
         <li><strong>Email: </strong>alejandro.raimundo@hotmail.com</li>
@@ -45,5 +56,6 @@
         <li><strong>Direccion: </strong>casa#11 senda 4 Jardines de la sabana, La Libertad, El Salvador</li>
       </ul>
     </footer>
+
   </body>
 </html>
