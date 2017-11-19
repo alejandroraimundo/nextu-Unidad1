@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Hector Raimundo">
+    <meta name="description" content="Hoja de Vida Digital">
+    <title>Hoja de Vida Digital</title>
+  </head>
+
+  <body>
+<!--Inicia el encabezado -->
+    <header id="informacion_basica">
+      <svg id="logo">
+        <image xlink:href="images/LOGO.svg" width="200" height="200"></image>
+      </svg>
+        <h1>Hoja de Vida</h1>
+          <h2>Hector Raimundo</h2>
+    </header>
+
+  <!--Seccion con enlaces para navegar en las diferentes paginas -->
+    <nav id="enlaces">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="educacion.html">Educacion</a></li>
+        <li><a href="experiencia.html">Experiencia</a></li>
+      </ul>
+    </nav>
+
+<!--Inicia la seccion de la pagina -->
+    <section>
+      <article class="experiencia">
+        <h2>Experiencia</h2>
+
+<!--Video -->
+        <h2>Video-Una vision de motivacion</h2>
+        <video id="video_hoja_vida" controls autoplay preload="auto" width="300px" height="300px">
+          <!--5 formatos de Video para diferentes navegadores -->
+          <source src="videos/Motivacion_para_Ingeniera.mp4" type="video/mp4">
+          <source src="videos/Motivacion_para_Ingeniera.flv" type="video/flv">
+          <source src="videos/Motivacion_para_Ingeniera.3gp" type="video/3gp">
+          <source src="videos/Motivacion_para_Ingeniera.avi" type="video/avi">
+          <source src="videos/Motivacion_para_Ingeniera.mpg" type="video/mpg">
+          Tu nevegador no soporta el formato de video
+        </video>
+        <p>Una vision de motivacion - intro</p>
+
+<!--Audio -->
+        <h2>Audio - Una vision de motivacion</h2>
+        <audio id="audio_hoja_vida"controls>
+          <!--3 formatos de Audio para diferentes navegadores -->
+          <source src="audios/Hobbies_actividades.m4a" type="audio/m4a">
+          <source src="audios/Hobbies_actividades.mp4" type="audio/mp4">
+          <source src="audios/Hobbies_actividades.ogg" type="audio/ogg">
+          Tu navegador no soporta el formato de audio
+        </audio>
+        <p>Una vision de motivacion - Audio completo</p>
+      </article>
+    </section>
+
+<!--Inicia el pie de pagina con la informacion para contactar -->
+    <footer id="datos_contacto">
+      <p>&copy; Derechos reservados</p>
+      <ul>
+        <li><strong>Email: </strong>alejandro.raimundo@hotmail.com</li>
+        <li><strong>Telefono: </strong>(+503) 7705-8811</li>
+        <li><strong>Direccion: </strong>casa#11 senda 4 Jardines de la sabana, La Libertad, El Salvador</li>
+      </ul>
+    </footer>
+  </body>
+</html>

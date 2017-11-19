@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Hector Raimundo">
+    <meta name="description" content="Hoja de Vida Digital">
+    <title>Hoja de Vida Digital</title>
+  </head>
+
+  <body>
+<!--Inicia el encabezado -->
+    <header id="informacion_basica">
+      <svg id="logo">
+        <image xlink:href="images/LOGO.svg" width="200" height="200"></image>
+      </svg>
+        <h1>Hoja de Vida</h1>
+          <h2>Hector Raimundo</h2>
+    </header>
+
+  <!--Seccion con enlaces para navegar en las diferentes paginas -->
+    <nav id="enlaces">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="educacion.html">Educacion</a></li>
+        <li><a href="experiencia.html">Experiencia</a></li>
+      </ul>
+    </nav>
+
+<!--Inicia la seccion de la pagina -->
+    <section>
+
+<!--Seccion para la educacion -->
+      <article class="estudios">
+        <h2>Educacion</h2>
+          <table id="tabla_estudios" border="1">
+            <thead id="encabezados_tabla">
+              <tr>
+                <th>Año</th>
+                <th>Institucion</th>
+                <th>Lugar</th>
+                <th>¿Culminó?</th>
+              </tr>
+            </thead>
+            <tbody id="cuerpo_tabla">
+              <tr id="estudios_primarios">
+                <td>2001</td>
+                <td>Alberto Masferrer</td>
+                <td>Santa Tecla</td>
+                <td>Si</td>
+              </tr>
+              <tr id="estudios_medios">
+                <td>2004</td>
+                <td>Joyas de Ceren</td>
+                <td>San Salvador</td>
+                <td>Si</td>
+              </tr>
+              <tr id="estudios_superiores">
+                <td>2013</td>
+                <td>Universidad de El Salvador</td>
+                <td>San Salvador</td>
+                <td>Si</td>
+              </tr>
+            </tbody>
+          </table>
+          <!--Añadir educacion -->
+          <h2>Agregar Educacion</h2>
+          <form id="formulario_incluir_educacion"autocomplete="on" name="Formulario_Educacion">
+            <p>
+            <label id="lista_2010-2017" for="Año">Año</label>
+              <select name="Año">
+                <option value="1">2010</option>
+                <option value="2">2011</option>
+                <option value="3">2012</option>
+                <option value="3">2013</option>
+                <option value="3">2014</option>
+                <option value="3">2015</option>
+                <option value="3">2016</option>
+                <option value="3">2017</option>
+              </select>
+            </p>
+
+            <p id="Institucion_estudios">
+            <label for="Institucion">Institucion</label>
+            <input type="Institucion" name="Institucion" required>
+            </p>
+            <br>
+
+            <p id="lugar_estudios">
+            <label for="Lugar">Lugar</label>
+            <textarea name="Lugar" rows="8" cols="40"></textarea>
+            </p>
+
+            <p id="estudios_finalizados">
+              <label for="¿Culminó?">¿Culminó?</label>
+              <input type="radio" name="Si">Si
+              <input type="radio" name="No">No
+            </p>
+
+            <p id="submit">
+              <input type="submit" value="Submit">
+            </p>
+          </form>
+      </article>
+    </section>
+
+  <!--Inicia el pie de pagina con la informacion para contactar -->
+    <footer id="datos_contacto">
+      <p>&copy; Derechos reservados</p>
+      <ul>
+        <li><strong>Email: </strong>alejandro.raimundo@hotmail.com</li>
+        <li><strong>Telefono: </strong>(+503) 7705-8811</li>
+        <li><strong>Direccion: </strong>casa#11 senda 4 Jardines de la sabana, La Libertad, El Salvador</li>
+      </ul>
+    </footer>
+  </body>
+</html>
